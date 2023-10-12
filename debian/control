@@ -1,15 +1,32 @@
-Source: template-repository
-Section: unknown
+Source: libprogress-any-output-termprogressbarcolor-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Laurent Baillet <laurent.baillet@gmail.com>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libcapture-tiny-perl <!nocheck>,
+                     libcolor-ansi-util-perl <!nocheck>,
+                     libmonkey-patch-action-perl (>= 0.060) <!nocheck>,
+                     libprogress-any-perl (>= 0.219) <!nocheck>,
+                     libstring-elide-parts-perl <!nocheck>,
+                     libtext-ansi-util-perl <!nocheck>,
+                     perl
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libprogress-any-output-termprogressbarcolor-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libprogress-any-output-termprogressbarcolor-perl.git
+Homepage: https://metacpan.org/release/Progress-Any-Output-TermProgressBarColor
+Rules-Requires-Root: no
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: libprogress-any-output-termprogressbarcolor-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libcolor-ansi-util-perl,
+         libmonkey-patch-action-perl (>= 0.060),
+         libprogress-any-perl (>= 0.219),
+         libstring-elide-parts-perl,
+         libtext-ansi-util-perl
+Description: module to output progress to terminal as color bar
+ Progress::Any::Output::TermProgressBarColor permits one to display nice
+ and rich progress bars using customizable colors and animations.

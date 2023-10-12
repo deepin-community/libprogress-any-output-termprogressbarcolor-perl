@@ -1,5 +1,44 @@
-template-repository (1.0-1) unstable; urgency=medium
+libprogress-any-output-termprogressbarcolor-perl (0.249-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Import upstream version 0.249.
+  * Bump versioned (build) dependency on libprogress-any-perl.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- gregor herrmann <gregoa@debian.org>  Tue, 25 Aug 2020 02:01:16 +0200
+
+libprogress-any-output-termprogressbarcolor-perl (0.248-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.248.
+  * Bump versioned (build) dependency on libprogress-any-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 15 Jul 2020 18:12:55 +0200
+
+libprogress-any-output-termprogressbarcolor-perl (0.247-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.247.
+  * Update years of upstream copyright.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Set Rules-Requires-Root: no.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 22 Jun 2020 20:48:54 +0200
+
+libprogress-any-output-termprogressbarcolor-perl (0.246-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.246.
+  * Update years of upstream copyright.
+  * Update (build) dependencies.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * debian/watch: use uscan version 4.
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 06 Sep 2019 21:42:55 +0200
+
+libprogress-any-output-termprogressbarcolor-perl (0.245-1) unstable; urgency=low
+
+  * Initial release (Closes: #932579).
+
+ -- Laurent Baillet <laurent.baillet@gmail.com>  Thu, 18 Jul 2019 22:04:03 +0200
